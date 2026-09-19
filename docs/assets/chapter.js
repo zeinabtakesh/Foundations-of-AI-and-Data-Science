@@ -1,0 +1,201 @@
+(() => {
+  const periods = [
+    ["Foundations", "What can machines compute?", 0, 3],
+    ["AI becomes a field", "Can machines reason and learn?", 3, 9],
+    ["First AI winter", "Where did early expectations run into limits?", 9, 10],
+    ["Symbolic AI and expert systems", "How far can explicit rules take us?", 10, 12],
+    ["Neural networks return", "Can networks learn useful patterns?", 12, 14],
+    ["Second AI winter", "Why did confidence fall again?", 14, 15],
+    ["Statistical machine learning", "What changes when systems learn from data?", 15, 16],
+    ["Deep learning and modern AI", "What became possible at larger scale?", 16, 19]
+  ];
+  const events = [
+    ["1936", "Turing machine", "Foundations", "A precise model of what it means to follow a computation.", "01-foundations/01-turing-machine.md"],
+    ["1943", "McCulloch–Pitts neuron", "Foundations", "A mathematical neuron connects logic and neural activity.", "01-foundations/02-mcculloch-pitts-neuron.md"],
+    ["1950", "Turing test", "Foundations", "Turing asks how we might judge a machine's conversational behavior.", "01-foundations/03-turing-test.md"],
+    ["1956", "Dartmouth workshop", "AI becomes a field", "Researchers gather around the proposal to study artificial intelligence.", "02-ai-becomes-a-field/01-dartmouth-workshop.md"],
+    ["1950s", "Symbolic reasoning", "AI becomes a field", "Early programs manipulate symbols to search for solutions.", "02-ai-becomes-a-field/02-early-symbolic-reasoning.md"],
+    ["1957–58", "Perceptron", "AI becomes a field", "A simple neural model learns weights from examples.", "02-ai-becomes-a-field/03-perceptron.md"],
+    ["1959", "Samuel's checkers", "AI becomes a field", "A game program improves its play through experience.", "02-ai-becomes-a-field/04-samuel-checkers.md"],
+    ["1966", "ELIZA", "AI becomes a field", "A rule-based conversation program reveals the power of pattern matching.", "02-ai-becomes-a-field/05-eliza.md"],
+    ["1969", "Perceptron limitations", "AI becomes a field", "Limits of single-layer perceptrons focus attention on harder problems.", "02-ai-becomes-a-field/06-perceptron-limitations.md"],
+    ["1970s", "First AI winter", "Limits emerge", "High expectations meet limited computing power and difficult problems."],
+    ["1970s–80s", "Expert systems", "Rules and knowledge", "Specialized systems encode expert knowledge as facts and rules."],
+    ["1980", "Chinese room", "Rules and knowledge", "A philosophical challenge asks whether symbol manipulation implies understanding."],
+    ["1982", "Hopfield networks", "Neural networks return", "Recurrent networks demonstrate associative memory."],
+    ["1980s", "Backpropagation", "Neural networks return", "Training methods make multilayer networks more practical."],
+    ["Late 1980s", "Second AI winter", "Limits emerge", "The cost and limits of expert systems temper expectations again."],
+    ["1990s–2000s", "Statistical learning", "Learning from data", "Data-driven methods become central to many AI tasks."],
+    ["2012", "AlexNet", "Deep learning", "Deep networks and GPUs produce a major image-recognition result."],
+    ["2016", "AlphaGo", "Modern AI", "Search and learned networks combine to master Go."],
+    ["2017 onward", "Transformers", "Modern AI", "Attention-based architectures shape later language models."]
+  ];
+
+  function initTimeline(root) {
+    const navigation = root.querySelector("[data-era-nav]");
+    const container = root.querySelector("[data-timeline-periods]");
+    periods.forEach(([name, question, start, end], periodIndex) => {
+      const id = `period-${periodIndex + 1}`;
+      const jump = document.createElement("a");
+      jump.href = `#${id}`;
+      jump.textContent = `${periodIndex + 1}. ${name}`;
+      navigation.append(jump);
+
+      const section = document.createElement("section");
+      section.className = "timeline-period";
+      section.id = id;
+      const heading = document.createElement("h3");
+      heading.textContent = `${String(periodIndex + 1).padStart(2, "0")} / ${name}`;
+      const prompt = document.createElement("p");
+      prompt.className = "timeline-question";
+      prompt.textContent = question;
+      const list = document.createElement("ol");
+      list.className = "timeline-events";
+      events.slice(start, end).forEach(event => {
+        const item = document.createElement("li");
+        const content = event[4] ? document.createElement("a") : document.createElement("div");
+        content.className = event[4] ? "timeline-link" : "timeline-preview";
+        if (event[4]) content.href = new URL(event[4].replace(/\.md$/, "/"), document.baseURI).href;
+        const year = document.createElement("span");
+        year.className = "timeline-year";
+        year.textContent = event[0];
+        const title = document.createElement("strong");
+        title.textContent = event[1];
+        const summary = document.createElement("span");
+        summary.className = "timeline-summary";
+        summary.textContent = event[3];
+        content.append(year, title, summary);
+        if (event[4]) {
+          const arrow = document.createElement("span");
+          arrow.className = "timeline-arrow";
+          arrow.setAttribute("aria-hidden", "true");
+          arrow.textContent = "→";
+          content.append(arrow);
+        }
+        item.append(content);
+        list.append(item);
+      });
+      section.append(heading, prompt, list);
+      container.append(section);
+    });
+  }
+
+  function initMachine(root) {
+    const tapeElement = root.querySelector("[data-machine-tape]");
+    const status = root.querySelector("[data-machine-status]");
+    const rule = root.querySelector("[data-machine-rule]");
+    const stepButton = root.querySelector("[data-machine-step]");
+    const playButton = root.querySelector("[data-machine-play]");
+    const resetButton = root.querySelector("[data-machine-reset]");
+    let tape, head, halted, timer;
+    function render() {
+      tapeElement.replaceChildren();
+      for (let i = 0; i < 7; i++) {
+        const cell = document.createElement("div");
+        cell.className = "machine-cell" + (i === head ? " is-head" : "");
+        cell.innerHTML = `<span class="machine-head">HEAD</span><span class="machine-symbol"></span><span class="machine-position"></span>`;
+        cell.querySelector(".machine-symbol").textContent = tape[i] || "□";
+        cell.querySelector(".machine-position").textContent = String(i);
+        tapeElement.append(cell);
+      }
+      status.textContent = halted ? "Halted · blank reached" : `Scanning · cell ${head}`;
+      stepButton.disabled = halted;
+      playButton.disabled = halted;
+    }
+    function stop() {
+      if (timer) clearInterval(timer);
+      timer = null;
+      playButton.textContent = "Play";
+    }
+    function step() {
+      if (halted) return;
+      if (tape[head] === "1") {
+        rule.textContent = "Read 1 → keep 1 → move right → keep scanning";
+        head += 1;
+      } else if (tape[head] === "0") {
+        tape[head] = "1";
+        rule.textContent = "Read 0 → write 1 → move right → keep scanning";
+        head += 1;
+      } else {
+        halted = true;
+        rule.textContent = "Read blank → leave it blank → halt. The tape now reads 1111.";
+        stop();
+      }
+      render();
+    }
+    function reset() {
+      stop();
+      tape = ["1", "0", "1", "0", "", "", ""];
+      head = 0;
+      halted = false;
+      rule.textContent = "Current rules: keep 1, change 0 to 1, and stop at the first blank cell.";
+      render();
+    }
+    stepButton.addEventListener("click", step);
+    playButton.addEventListener("click", () => {
+      if (timer) { stop(); return; }
+      playButton.textContent = "Pause";
+      timer = setInterval(step, 700);
+    });
+    resetButton.addEventListener("click", reset);
+    reset();
+  }
+
+  function initNeuron(root) {
+    const inputs = [...root.querySelectorAll("[data-neuron-input]")];
+    const modes = [...root.querySelectorAll("[data-neuron-mode]")];
+    const values = [...root.querySelectorAll("[data-neuron-value]")];
+    const sumElement = root.querySelector("[data-neuron-sum]");
+    const thresholdElement = root.querySelector("[data-neuron-threshold]");
+    const outputElement = root.querySelector("[data-neuron-output]");
+    const modeLabel = root.querySelector("[data-neuron-mode-label]");
+    const explanation = root.querySelector("[data-neuron-explanation]");
+    let mode = "and";
+    function render() {
+      const numbers = inputs.map(input => Number(input.checked));
+      const sum = numbers[0] + numbers[1];
+      const threshold = mode === "and" ? 2 : 1;
+      const output = Number(sum >= threshold);
+      values.forEach((value, index) => { value.textContent = String(numbers[index]); });
+      modes.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.neuronMode === mode)));
+      sumElement.textContent = String(sum);
+      thresholdElement.textContent = String(threshold);
+      outputElement.textContent = String(output);
+      outputElement.classList.toggle("is-on", output === 1);
+      modeLabel.textContent = `${mode.toUpperCase()} · threshold ${threshold}`;
+      explanation.textContent = `${numbers[0]} + ${numbers[1]} = ${sum}. ${sum} ${output ? "reaches" : "is below"} the threshold ${threshold}, so the output is ${output}.`;
+    }
+    inputs.forEach(input => input.addEventListener("change", render));
+    modes.forEach(button => button.addEventListener("click", () => { mode = button.dataset.neuronMode; render(); }));
+    render();
+  }
+
+  function init() {
+    document.querySelectorAll("[data-chapter-timeline]:not([data-ready])").forEach(root => {
+      root.dataset.ready = "true";
+      initTimeline(root);
+    });
+    document.querySelectorAll("[data-turing-machine]:not([data-ready])").forEach(root => {
+      root.dataset.ready = "true";
+      initMachine(root);
+    });
+    document.querySelectorAll("[data-neuron-lab]:not([data-ready])").forEach(root => {
+      root.dataset.ready = "true";
+      initNeuron(root);
+    });
+    document.querySelectorAll("[data-open-details]:not([data-ready])").forEach(link => {
+      link.dataset.ready = "true";
+      link.addEventListener("click", () => {
+        const details = document.getElementById(link.hash.slice(1));
+        if (details) details.open = true;
+      });
+    });
+    const linkedDetails = document.getElementById(window.location.hash.slice(1));
+    if (linkedDetails?.tagName === "DETAILS") linkedDetails.open = true;
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+  document.addEventListener("DOMContentLoaded", () => {
+    if (window.document$) window.document$.subscribe(init);
+  });
+})();

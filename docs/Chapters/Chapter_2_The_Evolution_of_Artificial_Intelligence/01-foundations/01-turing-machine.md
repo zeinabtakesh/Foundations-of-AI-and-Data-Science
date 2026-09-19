@@ -1,78 +1,80 @@
-# 1936 — Alan Turing and the Turing Machine
+# The Turing Machine
 
-In 1936, **Alan Turing** introduced what is now called the **Turing machine**.
+<div class="chapter-intro" markdown>
 
-The Turing machine was not a physical computer. It was a theoretical mathematical model designed around a fundamental question:
+**1936 · Foundations of computation**
 
-> **What does it mean for a problem to be computable?**
+What does it mean to compute something? [Alan Turing](#about-alan-turing){ data-open-details } answered with a deliberately simple imaginary machine: a tape for memory, a head that reads and writes, and rules that tell it what to do next.
 
-## What is a Turing Machine?
+[← Timeline](../index.md){ .chapter-back title="Back to chapter timeline" }
 
-A Turing machine is a simple abstract computer consisting of:
+</div>
 
-- an unbounded tape divided into cells,
-- a read/write head,
-- a current state,
-- a set of transition rules.
+## What is the machine?
 
-The tape acts like memory. Each cell stores a symbol, and the head examines one cell at a time.
+A Turing machine is a theoretical model Alan Turing introduced in 1936 to study what can be computed by following exact instructions. It was not a physical computer he built.
 
-```text
-                Read / Write Head
-                       ↓
-... | 0 | 1 | 1 | 0 | _ | _ | ...
-             Tape / Memory
-```
+It is an abstract computer with four parts:
 
-## How does it work?
+1. **Tape:** a sequence of cells that stores symbols. In the theory, the tape can extend as far as the computation needs.
+2. **Read/write head:** examines one cell, can replace its symbol, and moves along the tape.
+3. **State:** remembers which stage of the procedure the machine is in.
+4. **Transition rules:** determine the next action from the current state and the symbol under the head.
 
-At every step:
+<figure class="turing-diagram">
+  <img src="../../../../assets/turing-machine-diagram.svg" alt="Diagram showing a row of tape cells, a read/write head above one cell, and a rule that uses the current state and symbol to decide what to write and where to move" width="920" height="270">
+  <figcaption>The tape stores information; the head and rules change it one step at a time.</figcaption>
+</figure>
 
-```text
-Read
- ↓
-Write
- ↓
-Move left or right
- ↓
-Change state
-```
+## How it works
 
-A transition rule can be written as:
+At each step, the machine reads the symbol under the head. It then follows a rule to **write a symbol, move the head, and enter a state**. Repeating these small steps produces a computation.
 
-$$
-(q_i,s) \rightarrow (s',D,q_j)
-$$
+For example, a machine can scan a row containing both `0`s and `1`s. It keeps each `1`, changes each `0` to `1`, and stops when it reaches a blank cell:
 
-where:
+| State | Read | Write | Move | Next state |
+| --- | --- | --- | --- | --- |
+| Scan | `1` | `1` | Right | Scan |
+| Scan | `0` | `1` | Right | Scan |
+| Scan | blank | blank | Stay | Halt |
 
-- $q_i$ is the current state,
-- $s$ is the symbol currently being read,
-- $s'$ is the new symbol written to the tape,
-- $D$ determines whether the head moves left or right,
-- $q_j$ is the new state.
+Starting with `1010`, the head leaves the first and third cells as `1`, changes the second and fourth cells to `1`, and stops at the blank. The result is `1111`.
 
-## Key Idea
+### Try it yourself
 
-> A surprisingly simple mechanical system can represent general algorithmic computation.
+Press **Step** to see one rule applied at a time, or **Play** to let the machine run. **Reset** returns it to `1010`.
 
-The Turing machine gave computer science a mathematical framework for talking about **computation itself**.
+<div class="machine-lab" data-turing-machine>
+  <div class="machine-topline"><span>SCAN 1s AND 0s</span><span data-machine-status role="status" aria-live="polite">Ready</span></div>
+  <div class="machine-tape" data-machine-tape aria-label="Turing machine tape"></div>
+  <div class="machine-controls">
+    <button type="button" data-machine-step>Step</button>
+    <button type="button" data-machine-play>Play</button>
+    <button type="button" data-machine-reset>Reset</button>
+  </div>
+  <p class="machine-rule" data-machine-rule></p>
+</div>
 
-This matters to the history of AI because before asking whether a machine can be intelligent, we first need a way to understand what machines can compute.
+The display shows seven cells so the movement is easy to follow. The mathematical model is not limited to seven cells.
 
-## What comes next?
+## Key insights
 
-In 1943, Warren McCulloch and Walter Pitts approached computation from another direction:
+**A small set of mechanical rules can describe a general process of computation.** Turing's model gave computer science a precise way to discuss algorithms and their limits. It did not claim that following rules alone makes a machine intelligent; it established the computational foundation on which later AI ideas could be explored.
 
-> **Can neuron-like systems perform computation?**
+The next milestone asks a different question: can a simplified neuron perform computation? [Continue to the McCulloch–Pitts neuron](02-mcculloch-pitts-neuron.md).
 
-That leads to the **McCulloch–Pitts neuron**.
+<details class="turing-more" id="about-alan-turing" markdown="1">
+<summary>More about Alan Turing</summary>
 
----
+<figure class="turing-portrait">
+  <img src="../../../../assets/alan-turing-1936.jpg" alt="Black-and-white portrait of Alan Turing at Princeton University in 1936" width="733" height="745" loading="lazy">
+  <figcaption>Alan Turing in 1936. Photograph: unknown photographer, via <a href="https://commons.wikimedia.org/wiki/File:Alan_Turing_(1912-1954)_in_1936_at_Princeton_University.jpg">Wikimedia Commons</a>.</figcaption>
+</figure>
 
-[← Back to Chapter 2 timeline](../index.md)
+Alan Turing (1912–1954) was a British mathematician whose work helped establish the theory of computation. In his 1936 paper, he asked which mathematical procedures could be carried out by a machine following exact instructions. His answer was a theoretical model, not a computer he physically built.
 
-## References
+That model matters to AI because AI systems also run procedures. Before asking whether a machine can reason or learn, it helps to understand what following a computable procedure means.
 
-- Gjergji Kasneci, _AI in Society — Foundations of AI and Data Science_, Technical University of Munich (TUM), Chapter 2.
-- Alan M. Turing, _On Computable Numbers, with an Application to the Entscheidungsproblem_ (1936).
+</details>
+
+**References:** _AI In Society_, Chapter 2 learning notes, pp. 1–2; Alan Turing, “On Computable Numbers, with an Application to the Entscheidungsproblem” (1936). Portrait source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Alan_Turing_(1912-1954)_in_1936_at_Princeton_University.jpg).

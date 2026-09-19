@@ -3,6 +3,16 @@ site_name: Foundations of AI and Data Science
 theme:
   name: material
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - assets/chapter.css
+
+extra_javascript:
+  - assets/chapter.js
+
 nav:
   - Home: index.md
   - Evolution of AI:
