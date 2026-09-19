@@ -1,0 +1,20 @@
+site_name: Foundations of AI and Data Science
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Evolution of AI:
+      - Overview: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/index.md
+      - Foundations:
+          - Turing Machine: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/01-foundations/01-turing-machine.md
+          - McCulloch-Pitts Neuron: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/01-foundations/02-mcculloch-pitts-neuron.md
+          - Turing Test: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/01-foundations/03-turing-test.md
+      - AI Becomes a Field:
+          - Dartmouth Workshop: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/01-dartmouth-workshop.md
+          - Early Symbolic Reasoning: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/02-early-symbolic-reasoning.md
+          - Perceptron: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/03-perceptron.md
+          - Samuel's Checkers Program: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/04-samuel-checkers.md
+          - ELIZA: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/05-eliza.md
+          - Perceptron Limitations: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/06-perceptron-limitations.md

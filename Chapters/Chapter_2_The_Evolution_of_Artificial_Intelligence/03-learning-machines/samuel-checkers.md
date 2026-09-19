@@ -1,2 +1,0 @@
-# Samuel's Checkers Program
-
