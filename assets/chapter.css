@@ -14,15 +14,15 @@
     width: 9.5rem;
   }
 
-  body:has(.chapter-intro) .md-header__button[for="__drawer"] {
-    display: inline-block;
+  .md-header__button[for="__drawer"] {
+    display: inline-block !important;
   }
 
-  body:has(.chapter-intro):has(#__drawer:checked) .md-sidebar--primary {
-    display: none;
+  #__drawer:checked ~ .md-container .md-sidebar--primary {
+    display: none !important;
   }
 
-  body:has(.chapter-intro) #__drawer:checked ~ .md-overlay {
+  #__drawer:checked ~ .md-overlay {
     height: 0;
     opacity: 0;
     width: 0;
