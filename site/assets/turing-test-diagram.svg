@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" role="img" aria-labelledby="title description">
+  <title id="title">An anonymous reply in the Turing test</title>
+  <desc id="description">A human and a machine are hidden behind a curtain. One anonymous text reply passes through the curtain to a human judge, who must guess which hidden source sent it.</desc>
+  <rect width="920" height="360" fill="#f3f8f6"/>
+  <rect x="24" y="28" width="336" height="304" rx="4" fill="#e5eeeb"/>
+  <g font-family="Arial,sans-serif">
+    <text x="44" y="57" fill="#176d68" font-size="16" font-weight="700">TWO POSSIBLE SOURCES</text>
+    <circle cx="87" cy="121" r="30" fill="#176d68"/>
+    <circle cx="87" cy="112" r="9" fill="#ffffff"/>
+    <path d="M69 137 C73 119 101 119 105 137" fill="#ffffff"/>
+    <text x="139" y="129" fill="#172b2b" font-size="22" font-weight="700">HUMAN</text>
+    <rect x="57" y="210" width="60" height="60" rx="5" fill="#173433"/>
+    <rect x="70" y="226" width="34" height="28" rx="3" fill="#ffffff"/>
+    <circle cx="80" cy="240" r="3" fill="#173433"/>
+    <circle cx="94" cy="240" r="3" fill="#173433"/>
+    <path d="M77 248 H98" stroke="#173433" stroke-width="2"/>
+    <text x="139" y="250" fill="#172b2b" font-size="22" font-weight="700">MACHINE</text>
+
+    <path d="M240 121 H315 V178 M240 240 H315 V178" fill="none" stroke="#9dbdb5" stroke-width="3" stroke-dasharray="7 7"/>
+    <path d="M315 178 H488" stroke="#176d68" stroke-width="3"/>
+    <path d="M476 171 L488 178 L476 185" fill="none" stroke="#176d68" stroke-width="3"/>
+
+    <rect x="360" y="20" width="100" height="15" rx="3" fill="#173433"/>
+    <path d="M372 35 Q360 72 371 109 Q382 147 371 185 Q360 223 372 261 Q381 300 369 329 L451 329 Q439 300 449 261 Q460 223 449 185 Q438 147 449 109 Q460 72 448 35 Z" fill="#d9684e"/>
+    <path d="M387 42 Q399 112 386 185 Q399 260 386 321 M412 42 Q400 112 412 185 Q400 260 412 321 M436 42 Q424 112 437 185 Q425 260 437 321" fill="none" stroke="#b64f3d" stroke-width="3" opacity=".6"/>
+    <text x="410" y="349" fill="#ac4a38" font-size="15" font-weight="700" text-anchor="middle">CURTAIN</text>
+
+    <text x="512" y="58" fill="#176d68" font-size="16" font-weight="700">WHAT THE JUDGE SEES</text>
+    <rect x="494" y="132" width="183" height="92" rx="4" fill="#ffffff" stroke="#bfd5cf" stroke-width="2"/>
+    <text x="512" y="164" fill="#536765" font-size="14" font-weight="700">TEXT REPLY</text>
+    <text x="512" y="193" fill="#172b2b" font-size="18">“Here is my answer...”</text>
+    <path d="M677 178 H727" stroke="#176d68" stroke-width="3"/>
+    <path d="M715 171 L727 178 L715 185" fill="none" stroke="#176d68" stroke-width="3"/>
+
+    <rect x="727" y="102" width="169" height="160" rx="4" fill="#173433"/>
+    <text x="811" y="137" fill="#c4e8db" font-size="16" font-weight="700" text-anchor="middle">HUMAN JUDGE</text>
+    <text x="811" y="199" fill="#ffffff" font-size="57" font-weight="700" text-anchor="middle">?</text>
+    <text x="811" y="237" fill="#ffffff" font-size="17" text-anchor="middle">Human or machine?</text>
+  </g>
+</svg>
