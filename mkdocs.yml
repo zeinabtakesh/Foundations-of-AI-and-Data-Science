@@ -8,7 +8,7 @@ markdown_extensions:
   - md_in_html
 
 extra_css:
-  - assets/chapter.css
+  - assets/chapter.css?v=20260920-menu
 
 extra_javascript:
   - assets/chapter.js
