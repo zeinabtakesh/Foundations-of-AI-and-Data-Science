@@ -4,6 +4,8 @@ This repository contains my personal notes and deep dives while independently st
 
 The textbook provides the main structure of the repository. For topics I want to understand more deeply, I expand with additional explanations, papers, people, architectures, historical context, diagrams, and implementations.
 
+[Read Chapter 2: The Evolution of Artificial Intelligence](https://zeinabtakesh.github.io/Foundations-of-AI-and-Data-Science/Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/)
+
 ## Primary Reference
 
 Gjergji Kasneci,  

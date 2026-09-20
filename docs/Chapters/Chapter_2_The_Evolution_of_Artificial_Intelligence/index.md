@@ -1,6 +1,6 @@
 # The Evolution of Artificial Intelligence
 
-<div class="chapter-intro" markdown>
+<div class="chapter-intro chapter-overview" markdown>
 
 **Chapter 2 · A historical map**
 
