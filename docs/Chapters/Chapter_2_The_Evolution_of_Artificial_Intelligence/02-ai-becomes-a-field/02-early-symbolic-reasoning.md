@@ -36,7 +36,7 @@ The **Logic Theorist**, built by [Allen Newell](#allen-newell){ data-open-detail
     <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Herbert_simon_red_complete.jpg/500px-Herbert_simon_red_complete.jpg" alt="Painted portrait of Herbert A. Simon" loading="lazy">
     <div class="organizer-card-body">
       <p>Herbert A. Simon (1916–2001) was an American scholar of decision-making, psychology, and computer science. He worked with Newell and Shaw to model human reasoning in computer programs.</p>
-      <p class="organizer-credit">Portrait: <a href="https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg">Richard Rappaport / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Biography: <a href="https://digitalcollections.library.cmu.edu/cmu-collection/herbert-simon">CMU Libraries</a>.</p>
+      <p class="organizer-credit">Portrait: <a href="https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg">Richard Rappaport / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Biography: <a href="https://www.cs.cmu.edu/simon/bio.html">Carnegie Mellon University</a>.</p>
     </div>
   </details>
   <details class="organizer-card" id="cliff-shaw">
@@ -51,4 +51,4 @@ The **Logic Theorist**, built by [Allen Newell](#allen-newell){ data-open-detail
 
 [Next: the perceptron](03-perceptron.md), which learned from examples rather than following only fixed rules.
 
-**References:** [Computer History Museum on symbolic search and the Logic Theorist](https://computerhistory.org/blog/ai-and-play-part-1-how-games-have-driven-two-schools-of-ai-research/); [Smithsonian Institution, John Clifford Shaw Papers](https://sova.si.edu/record/nmah.ac.0580).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Computer History Museum on symbolic search and the Logic Theorist](https://computerhistory.org/blog/ai-and-play-part-1-how-games-have-driven-two-schools-of-ai-research/); [Smithsonian Institution, John Clifford Shaw Papers](https://sova.si.edu/record/nmah.ac.0580).

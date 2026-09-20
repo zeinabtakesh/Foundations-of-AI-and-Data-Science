@@ -14,7 +14,7 @@ The [single-layer perceptron could not learn XOR](../02-ai-becomes-a-field/06-pe
 
 **Backpropagation** is a way to calculate how much each weight in a multilayer neural network contributes to a prediction error. It sends an error signal from the output layer back through the hidden layers. An optimization step then uses those calculations to adjust the weights.
 
-The influential 1986 paper by [David Rumelhart](#david-rumelhart){ data-open-details }, [Geoffrey Hinton](#geoffrey-hinton){ data-open-details }, and [Ronald Williams](#ronald-williams){ data-open-details } helped bring this method to wider attention. Earlier versions of the idea existed.
+The influential 1986 paper by [David Rumelhart](#david-rumelhart){ data-open-details }, [Geoffrey Hinton](#geoffrey-hinton){ data-open-details }, and [Ronald Williams](#ronald-williams){ data-open-details } helped bring this method to wider attention. Earlier gradient-based work existed; the book notes a 1960 precursor.
 
 ## How does it work?
 
@@ -39,10 +39,10 @@ The backward calculation uses the **chain rule** from calculus: it traces how a 
 <div class="organizer-grid">
   <details class="organizer-card" id="david-rumelhart">
     <summary>David Rumelhart</summary>
-    <img src="https://news.stanford.edu/__data/assets/image/0021/81408/Rumelhart_news.jpeg" alt="Portrait of David Rumelhart" loading="lazy">
+    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/DavidRumelhart-IJCNNseattle1991-07-08.jpg?width=500" alt="David Rumelhart speaking at a conference in 1991" loading="lazy">
     <div class="organizer-card-body">
       <p>David Rumelhart was an American psychologist whose work on cognition and parallel distributed processing helped establish neural networks as models of learning. He coauthored the influential 1986 backpropagation paper.</p>
-      <p class="organizer-credit">Photo: <a href="https://news.stanford.edu/">Stanford University</a>. Biography: <a href="https://www.psychologicalscience.org/observer/david-rumelhart">Association for Psychological Science</a>.</p>
+      <p class="organizer-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:DavidRumelhart-IJCNNseattle1991-07-08.jpg">Wikimedia Commons</a>. Biography: <a href="https://www.psychologicalscience.org/observer/david-rumelhart">Association for Psychological Science</a>.</p>
     </div>
   </details>
   <details class="organizer-card" id="geoffrey-hinton">
@@ -63,4 +63,4 @@ The backward calculation uses the **chain rule** from calculus: it traces how a 
   </details>
 </div>
 
-**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, section 2.4.1](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Rumelhart, Hinton and Williams, *Learning representations by back-propagating errors* (1986)](https://doi.org/10.1038/323533a0).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Rumelhart, Hinton and Williams, *Learning representations by back-propagating errors* (1986)](https://doi.org/10.1038/323533a0).

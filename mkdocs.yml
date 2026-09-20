@@ -27,6 +27,7 @@ nav:
           - Perceptron: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/03-perceptron.md
           - Samuel's Checkers Program: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/04-samuel-checkers.md
           - ELIZA: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/05-eliza.md
+          - Nearest Neighbors: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/07-nearest-neighbors.md
           - Perceptron Limitations: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/06-perceptron-limitations.md
       - First AI Winter:
           - Overview: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/03-first-ai-winter/01-first-ai-winter.md
@@ -34,13 +35,22 @@ nav:
           - Expert Systems: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/04-symbolic-ai-and-expert-systems/01-expert-systems.md
           - Chinese Room: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/04-symbolic-ai-and-expert-systems/02-chinese-room.md
       - Neural Networks Return:
+          - Early Convolutional Networks: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/05-neural-networks-return/03-early-cnns.md
           - Hopfield Networks: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/05-neural-networks-return/01-hopfield-networks.md
           - Backpropagation: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/05-neural-networks-return/02-backpropagation.md
       - Second AI Winter:
           - Overview: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/06-second-ai-winter/01-second-ai-winter.md
       - Statistical Machine Learning:
           - Overview: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/07-statistical-machine-learning/01-statistical-learning.md
+          - Reinforcement Learning: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/07-statistical-machine-learning/04-reinforcement-learning.md
+          - Ensembles: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/07-statistical-machine-learning/03-ensembles.md
+          - Long Short-Term Memory: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/07-statistical-machine-learning/05-lstm.md
       - Deep Learning and Modern AI:
+          - Neural Networks Become Practical Again: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/08-deep-learning-and-modern-ai/00-neural-networks-become-practical.md
           - AlexNet: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/08-deep-learning-and-modern-ai/01-alexnet.md
           - AlphaGo: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/08-deep-learning-and-modern-ai/02-alphago.md
           - Transformers: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/08-deep-learning-and-modern-ai/03-transformers.md
+          - Beyond Language Models: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/08-deep-learning-and-modern-ai/05-beyond-transformers.md
+      - Ideas and Impact:
+          - Symbolism and Connectionism: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/09-ideas-and-impact/01-symbolism-connectionism.md
+          - AI in Society and Future Directions: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/09-ideas-and-impact/02-ethics-and-future.md

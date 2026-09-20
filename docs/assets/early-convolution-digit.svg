@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" role="img" aria-labelledby="title desc">
+  <title id="title">From a pixel image to a recognized digit</title>
+  <desc id="desc">A pixel drawing of the digit seven is examined for a short horizontal stroke and a slanted stroke. A later stage combines these clues to recognize seven.</desc>
+  <rect width="760" height="320" fill="#f6faf8"/>
+  <g font-family="sans-serif" fill="#172b2b">
+    <text x="34" y="38" font-size="18" font-weight="700">1. Image</text>
+    <text x="287" y="38" font-size="18" font-weight="700">2. Find local strokes</text>
+    <text x="568" y="38" font-size="18" font-weight="700">3. Combine</text>
+  </g>
+  <g fill="#e4eeea">
+    <rect x="36" y="68" width="204" height="204" rx="4"/>
+    <rect x="284" y="68" width="208" height="204" rx="4"/>
+    <rect x="536" y="68" width="188" height="204" rx="4"/>
+  </g>
+  <g fill="#fff" stroke="#cbdcd8" stroke-width="1">
+    <rect x="58" y="88" width="32" height="32"/><rect x="90" y="88" width="32" height="32"/><rect x="122" y="88" width="32" height="32"/><rect x="154" y="88" width="32" height="32"/><rect x="186" y="88" width="32" height="32"/>
+    <rect x="58" y="120" width="32" height="32"/><rect x="90" y="120" width="32" height="32"/><rect x="122" y="120" width="32" height="32"/><rect x="154" y="120" width="32" height="32"/><rect x="186" y="120" width="32" height="32"/>
+    <rect x="58" y="152" width="32" height="32"/><rect x="90" y="152" width="32" height="32"/><rect x="122" y="152" width="32" height="32"/><rect x="154" y="152" width="32" height="32"/><rect x="186" y="152" width="32" height="32"/>
+    <rect x="58" y="184" width="32" height="32"/><rect x="90" y="184" width="32" height="32"/><rect x="122" y="184" width="32" height="32"/><rect x="154" y="184" width="32" height="32"/><rect x="186" y="184" width="32" height="32"/>
+    <rect x="58" y="216" width="32" height="32"/><rect x="90" y="216" width="32" height="32"/><rect x="122" y="216" width="32" height="32"/><rect x="154" y="216" width="32" height="32"/><rect x="186" y="216" width="32" height="32"/>
+  </g>
+  <g fill="#176d68">
+    <rect x="58" y="88" width="32" height="32"/><rect x="90" y="88" width="32" height="32"/><rect x="122" y="88" width="32" height="32"/><rect x="154" y="88" width="32" height="32"/><rect x="186" y="88" width="32" height="32"/>
+    <rect x="186" y="120" width="32" height="32"/><rect x="154" y="152" width="32" height="32"/><rect x="122" y="184" width="32" height="32"/><rect x="90" y="216" width="32" height="32"/>
+  </g>
+  <g stroke="#d9684e" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M317 119H457"/><path d="M431 163 356 235"/>
+  </g>
+  <g font-family="sans-serif" font-size="15" fill="#31504d">
+    <text x="319" y="101">top stroke</text><text x="318" y="258">slanted stroke</text>
+  </g>
+  <g font-family="sans-serif" fill="#172b2b" text-anchor="middle">
+    <text x="630" y="206" font-size="122" font-weight="700">7</text>
+    <text x="630" y="248" font-size="16">recognized digit</text>
+  </g>
+  <g fill="#d9684e" font-family="sans-serif" font-size="35" font-weight="700"><text x="247" y="175">→</text><text x="499" y="175">→</text></g>
+</svg>

@@ -46,4 +46,4 @@ The term *Turing test* is a later shorthand. Turing's paper described an **imita
 
 </details>
 
-**References:** _AI In Society_, Chapter 2 learning notes, p. 5; Alan M. Turing, “Computing Machinery and Intelligence” (1950).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); Alan M. Turing, “Computing Machinery and Intelligence” (1950).

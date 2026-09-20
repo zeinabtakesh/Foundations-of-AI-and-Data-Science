@@ -54,4 +54,4 @@ The deeper lesson is to ask **what a model can represent**, not only how well it
   </details>
 </div>
 
-**References:** [MIT Press, *Perceptrons*](https://mitpress.mit.edu/9780262130431/perceptrons/); [Stanford course notes on XOR and linear separability](https://web.stanford.edu/class/cs379c/resources/lectures/).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [MIT Press, *Perceptrons*](https://mitpress.mit.edu/9780262130431/perceptrons/); [Stanford course notes on XOR and linear separability](https://web.stanford.edu/class/cs379c/resources/lectures/).

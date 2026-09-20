@@ -43,4 +43,4 @@ ELIZA made **pattern-based replies feel like understanding**. Weizenbaum was str
 
 </details>
 
-**References:** [Weizenbaum's 1966 ELIZA paper](https://courses.cs.umbc.edu/331/papers/eliza.html); [MIT's biography of Weizenbaum](https://news.mit.edu/2008/obit-weizenbaum-0310); [ELIZA Archaeology Project](https://findingeliza.org/).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Weizenbaum's 1966 ELIZA paper](https://courses.cs.umbc.edu/331/papers/eliza.html); [MIT's biography of Weizenbaum](https://news.mit.edu/2008/obit-weizenbaum-0310); [ELIZA Archaeology Project](https://findingeliza.org/).

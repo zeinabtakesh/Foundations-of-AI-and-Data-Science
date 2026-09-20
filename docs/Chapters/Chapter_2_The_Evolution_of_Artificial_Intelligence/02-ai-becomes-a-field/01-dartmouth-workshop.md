@@ -58,4 +58,4 @@ The four names belong to the **proposal's organizers**; other researchers also a
 
 [Continue to early symbolic reasoning](02-early-symbolic-reasoning.md).
 
-**References:** _AI In Society_, Chapter 2 learning notes, pp. 6–7; [the 1955 Dartmouth proposal](https://people.csail.mit.edu/brooks/idocs/DartmouthProposal.pdf); [Dartmouth's history of the workshop](https://ai.dartmouth.edu/our-story).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [the 1955 Dartmouth proposal](https://people.csail.mit.edu/brooks/idocs/DartmouthProposal.pdf); [Dartmouth's history of the workshop](https://ai.dartmouth.edu/our-story).

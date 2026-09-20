@@ -32,12 +32,12 @@ If a program has **3 choices at each step**, then 2 steps create `3 × 3 = 9` po
 <div class="organizer-grid">
   <details class="organizer-card" id="james-lighthill">
     <summary>James Lighthill</summary>
-    <img src="https://royalsociety.org/-/media/blogs/2025/12/brain-boxes/brain-boxes-5.jpg" alt="Portrait of James Lighthill" loading="lazy">
+    <img src="https://mathshistory.st-andrews.ac.uk/Biographies/Lighthill/Lighthill_1.jpeg" alt="Photograph of James Lighthill" loading="lazy">
     <div class="organizer-card-body">
       <p>James Lighthill (1924–1998) was a British mathematician known for work in fluid dynamics. Asked to assess AI research in Britain, he wrote the influential report published in 1973.</p>
-      <p class="organizer-credit">Photo: <a href="https://royalsociety.org/blog/2025/12/brain-boxes/">Royal Society Photographic Collections</a>. Biography: <a href="https://catalogues.royalsociety.org/calmview/Record.aspx?id=NA5064&amp;src=CalmView.Persons">Royal Society</a>.</p>
+      <p class="organizer-credit">Photo: <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Lighthill/pictdisplay/">MacTutor, University of St Andrews</a>. Biography: <a href="https://catalogues.royalsociety.org/calmview/Record.aspx?id=NA5064&amp;src=CalmView.Persons">Royal Society</a>.</p>
     </div>
   </details>
 </div>
 
-**References:** [Lighthill's report and 1973 debate](https://www.aiai.ed.ac.uk/events/lighthill1973/); [National Academies on US AI funding](https://www.nationalacademies.org/read/6323/chapter/11); [Thomas Haigh on the “first AI winter”](https://zoo.cs.yale.edu/classes/cs200/lectures/AIACMDec2023.pdf).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Lighthill's report and 1973 debate](https://www.aiai.ed.ac.uk/events/lighthill1973/); [National Academies on US AI funding](https://www.nationalacademies.org/read/6323/chapter/11); [Thomas Haigh on the “first AI winter”](https://zoo.cs.yale.edu/classes/cs200/lectures/AIACMDec2023.pdf).

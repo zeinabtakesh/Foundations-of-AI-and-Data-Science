@@ -18,8 +18,10 @@ The **second AI winter** was a decline in enthusiasm and investment in AI, espec
 
 Expert systems needed many hand-written rules and struggled with unfamiliar cases. Their cost and limited flexibility disappointed some buyers and funders. Other AI approaches also faced limits in computing power and data.
 
+Earlier public funding programs, including the US **Strategic Computing Initiative** in the 1980s, had reflected high expectations. Later disappointment did not mean all AI funding or research stopped.
+
 ## Key insights
 
 **A successful demonstration may not scale into a practical product.** AI research continued, including work on [neural networks](../05-neural-networks-return/02-backpropagation.md) and learning from data.
 
-**Reference:** [National Academies, *Funding a Revolution*](https://www.nationalacademies.org/read/6323/chapter/11).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [National Academies, *Funding a Revolution*](https://www.nationalacademies.org/read/6323/chapter/11).

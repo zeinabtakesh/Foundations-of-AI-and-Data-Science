@@ -4,7 +4,7 @@
 
 **1982 · A network that can recall a pattern**
 
-Instead of following a list of expert rules, a Hopfield network uses connections between simple units to recover a stored pattern from an incomplete or noisy clue.
+Give the network a damaged version of a pattern it has stored, and it may recover the complete pattern.
 
 [← Timeline](../index.md){ .chapter-back title="Back to chapter timeline" }
 
@@ -12,15 +12,13 @@ Instead of following a list of expert rules, a Hopfield network uses connections
 
 ## What is it?
 
-A **Hopfield network** is a recurrent neural network: its units feed signals back to one another. In the classic model, each unit is on or off and connected to the others. Together, the connections can store patterns as **associative memories**.
-
-This is **connectionism**: a pattern is held in the network's connection strengths, rather than in the hand-written rules of [symbolic expert systems](../04-symbolic-ai-and-expert-systems/01-expert-systems.md).
+A **Hopfield network** is made of connected units that can each be on or off. The strengths of their connections store patterns, so an incomplete clue may prompt the network to reconstruct a complete one. This is [**associative memory**](#associative-memory){ data-open-details }: recalling a whole pattern from a clue. Because the units send signals back to one another, the network is called **recurrent**.
 
 [John Hopfield](#john-hopfield){ data-open-details } presented this influential model in 1982. [Shun-ichi Amari](#shun-ichi-amari){ data-open-details } had described related networks for remembering patterns a decade earlier.
 
 ## How does it work?
 
-First, the connection weights are set to store a pattern, such as the letter **H** below. Give the network an H with one square switched off. Each unit adds up the weighted signals it receives from the others. Here, the other **24 squares still match the stored H**, so their combined signal tells the missing square to switch on. In the standard model, such updates lower an **energy score** until the network settles into a stable pattern, called an **attractor**.
+First, set the connection strengths so the network stores a pattern, such as the letter **H** below. Then show it an H with one square missing. The connected units influence one another as they update. In this example, the missing square turns on and the network settles on the stored H. [Why does it settle?](#hopfield-attractor){ data-open-details }
 
 <figure class="hopfield-figure">
   <div class="hopfield-recall" aria-label="Illustrative pattern recall: a five-by-five letter H with one wrong bit enters a recurrent network and settles into a complete letter H">
@@ -37,10 +35,10 @@ First, the connection weights are set to store a pattern, such as the letter **H
     <span class="hopfield-arrow" aria-hidden="true">→</span>
     <div class="hopfield-process">
       <strong>Why the square changes</strong>
-      <span><b>1</b> Connections store the H pattern</span>
-      <span><b>2</b> The other 24 squares match H</span>
-      <span><b>3</b> Their weighted signals favor ON</span>
-      <span><b>4</b> The missing square flips ON</span>
+      <span><b>1</b> Connections hold the H pattern</span>
+      <span><b>2</b> An incomplete H is shown</span>
+      <span><b>3</b> Connected units influence one another</span>
+      <span><b>4</b> The missing square turns on</span>
     </div>
     <span class="hopfield-arrow" aria-hidden="true">→</span>
     <div class="hopfield-pattern">
@@ -59,7 +57,21 @@ First, the connection weights are set to store a pattern, such as the letter **H
 
 ## Key insights
 
-**Memory can emerge from the network's collective behavior**, rather than from a rule that explicitly says what the answer is. But recall is not guaranteed: a network may settle into the wrong stable pattern, and the number of patterns it can store reliably is limited.
+**The pattern is remembered through the connections, not a written rule.** A partial clue can bring back the whole pattern. Recall is not guaranteed: a network can settle on the wrong pattern, and it cannot reliably store unlimited patterns.
+
+<details class="turing-more" id="associative-memory" markdown>
+<summary>What is associative memory?</summary>
+
+It means recalling something from a related clue. Seeing most of a stored **H** can bring back the complete **H**, even though the missing square was not supplied. The clue must be close enough to a pattern the network stored.
+
+</details>
+
+<details class="turing-more" id="hopfield-attractor" markdown>
+<summary>Why does the network settle?</summary>
+
+In the classic model, updating units one at a time makes an **energy score** go down or stay the same. The network eventually reaches a stable state where another update does not improve that score. Such a stable pattern is called an **attractor**. It may be a stored memory, but it can also be the wrong pattern.
+
+</details>
 
 <div class="organizer-grid">
   <details class="organizer-card" id="john-hopfield">
@@ -80,4 +92,4 @@ First, the connection weights are set to store a pattern, such as the letter **H
   </details>
 </div>
 
-**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, section 2.3.2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Hopfield's 1982 paper](https://pubmed.ncbi.nlm.nih.gov/6953413/); [Amari's 1972 paper](https://pure.teikyo.jp/en/publications/learning-patterns-and-pattern-sequences-by-self-organizing-nets-o/).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Hopfield's 1982 paper](https://pubmed.ncbi.nlm.nih.gov/6953413/); [Amari's 1972 paper](https://pure.teikyo.jp/en/publications/learning-patterns-and-pattern-sequences-by-self-organizing-nets-o/).

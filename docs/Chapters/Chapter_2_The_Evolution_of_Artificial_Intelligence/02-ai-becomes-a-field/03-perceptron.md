@@ -45,4 +45,4 @@ A **single-layer perceptron** still cannot learn every kind of pattern. We will 
 
 </details>
 
-**References:** [Rosenblatt's 1958 perceptron paper](https://pubmed.ncbi.nlm.nih.gov/13602029/); [Smithsonian National Museum of American History, Mark I Perceptron](https://americanhistory.si.edu/collections/object/nmah_334414).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Rosenblatt's 1958 perceptron paper](https://pubmed.ncbi.nlm.nih.gov/13602029/); [Smithsonian National Museum of American History, Mark I Perceptron](https://americanhistory.si.edu/collections/object/nmah_334414).

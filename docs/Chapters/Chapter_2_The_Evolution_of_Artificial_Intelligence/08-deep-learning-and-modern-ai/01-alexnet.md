@@ -24,6 +24,8 @@ AlexNet was larger than earlier image-recognition networks and trained on many m
 
 **Scale changed what neural networks could achieve.** AlexNet combined a deep network, a large labeled dataset, and GPU computation. Its winning system had a **15.3% top-five error rate** in the 2012 ImageNet challenge, compared with **26.2%** for the runner-up. “Top-five error” means the correct label was missing from the model's five highest-ranked guesses.
 
+[Neural networks become practical again](00-neural-networks-become-practical.md) explains how data, compute, and training improvements came together.
+
 <div class="organizer-grid">
   <details class="organizer-card" id="alex-krizhevsky">
     <summary>Alex Krizhevsky</summary>
@@ -51,4 +53,4 @@ AlexNet was larger than earlier image-recognition networks and trained on many m
   </details>
 </div>
 
-**References:** [Original AlexNet paper (2012)](https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html); [ImageNet challenge 2012 results](https://www.image-net.org/challenges/LSVRC/2012/results.html); [Computer History Museum on AlexNet](https://computerhistory.org/blog/chm-releases-alexnet-source-code/).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Original AlexNet paper (2012)](https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html); [ImageNet challenge 2012 results](https://www.image-net.org/challenges/LSVRC/2012/results.html); [Computer History Museum on AlexNet](https://computerhistory.org/blog/chm-releases-alexnet-source-code/).

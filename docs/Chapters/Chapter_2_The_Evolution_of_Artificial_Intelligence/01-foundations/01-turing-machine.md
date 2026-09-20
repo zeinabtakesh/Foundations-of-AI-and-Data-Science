@@ -77,4 +77,4 @@ That model matters to AI because AI systems also run procedures. Before asking w
 
 </details>
 
-**References:** _AI In Society_, Chapter 2 learning notes, pp. 1–2; Alan Turing, “On Computable Numbers, with an Application to the Entscheidungsproblem” (1936). Portrait source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Alan_Turing_(1912-1954)_in_1936_at_Princeton_University.jpg).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); Alan Turing, “On Computable Numbers, with an Application to the Entscheidungsproblem” (1936). Portrait source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Alan_Turing_(1912-1954)_in_1936_at_Princeton_University.jpg).

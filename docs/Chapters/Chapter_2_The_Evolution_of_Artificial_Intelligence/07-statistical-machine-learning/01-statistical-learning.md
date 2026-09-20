@@ -28,31 +28,21 @@ Suppose we want to identify spam email. We provide examples labeled **spam** or 
   <figcaption>A simplified example: the test email was not used for training, but its known label lets us check the prediction. One correct answer alone does not prove the model works well.</figcaption>
 </figure>
 
-Methods prominent in this period included **support vector machines**, which find a boundary between classes, and [**ensembles**](#ensemble){ data-open-details } such as [**bagging**](#bagging){ data-open-details } and [**boosting**](#boosting){ data-open-details }, which combine predictions from multiple models.
+## Methods for classifying new examples
+
+**Support vector machines (1995)** look for a boundary with a wide gap between categories, aiming to classify new examples reliably. Nonlinear versions can also handle patterns such as [XOR](../02-ai-becomes-a-field/06-perceptron-limitations.md), which one straight line cannot separate.
+
+[**Ensembles**](03-ensembles.md), including [bagging](03-ensembles.md) and [boosting](03-ensembles.md), combine predictions from multiple models.
+
+<details class="turing-more" id="pagerank" markdown>
+<summary>Where does PageRank fit?</summary>
+
+**PageRank (1998)** ranked web pages using links between them. Its key idea was that a link from an important page should count more than one from a less important page. This produced an ordering from web data, rather than classifying labeled examples like the spam filter above.
+
+</details>
 
 ## Key insights
 
 **Learning from data can handle patterns that are difficult to write as explicit rules.** But a model can still fail when its training examples are too limited or unlike the cases it later encounters. Testing on unseen data became central to judging whether it had really learned.
 
-<details class="turing-more" id="ensemble" markdown>
-<summary>What is an ensemble?</summary>
-
-An **ensemble** combines several models to make one prediction, rather than relying on a single model. It might use a vote for categories or an average for numbers.
-
-</details>
-
-<details class="turing-more" id="bagging" markdown>
-<summary>How does bagging work?</summary>
-
-**Bagging** trains models separately on different random samples of the training data. Their predictions are then voted on or averaged, helping reduce the effect of any one model's quirks.
-
-</details>
-
-<details class="turing-more" id="boosting" markdown>
-<summary>How does boosting work?</summary>
-
-**Boosting** trains models in sequence. Each new model pays more attention to mistakes the earlier models made; their predictions are combined at the end.
-
-</details>
-
-**Reference:** [*AI in Society - Foundations of AI and Data Science*, section 2.4.3](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf).

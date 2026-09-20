@@ -40,4 +40,4 @@ Searle argued that **following rules for symbols is not, by itself, understandin
   </details>
 </div>
 
-**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, section 2.3.4](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Searle, *Minds, Brains, and Programs* (1980)](https://home.csulb.edu/~cwallis/382/readings/482/searle.minds.brains.programs.bbs.1980.pdf); [Stanford Encyclopedia of Philosophy on the debate](https://plato.stanford.edu/entries/chinese-room/).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Searle, *Minds, Brains, and Programs* (1980)](https://home.csulb.edu/~cwallis/382/readings/482/searle.minds.brains.programs.bbs.1980.pdf); [Stanford Encyclopedia of Philosophy on the debate](https://plato.stanford.edu/entries/chinese-room/).

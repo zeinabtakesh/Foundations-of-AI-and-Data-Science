@@ -78,4 +78,4 @@ The next milestone returns to Turing and asks how we might judge intelligent beh
 
 </details>
 
-**References:** _AI In Society_, Chapter 2 learning notes, pp. 3–4; Warren S. McCulloch and Walter Pitts, “A Logical Calculus of the Ideas Immanent in Nervous Activity” (1943).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); Warren S. McCulloch and Walter Pitts, “A Logical Calculus of the Ideas Immanent in Nervous Activity” (1943).

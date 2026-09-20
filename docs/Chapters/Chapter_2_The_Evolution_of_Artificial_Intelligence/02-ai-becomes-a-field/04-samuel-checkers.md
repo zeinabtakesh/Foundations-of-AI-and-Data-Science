@@ -43,4 +43,4 @@ Samuel's program showed that **experience could improve a computer's play**. Unl
 
 </details>
 
-**References:** [Arthur Samuel, “Some Studies in Machine Learning Using the Game of Checkers” (1959)](https://doi.org/10.1147/rd.33.0210); [IBM's history of Samuel Checkers](https://www.ibm.com/history/early-games).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Arthur Samuel, “Some Studies in Machine Learning Using the Game of Checkers” (1959)](https://doi.org/10.1147/rd.33.0210); [IBM's history of Samuel Checkers](https://www.ibm.com/history/early-games).

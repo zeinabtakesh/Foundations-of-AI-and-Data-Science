@@ -33,4 +33,4 @@ The networks supplied learned judgment; search let AlphaGo look ahead. Neither p
 
 **Learning and search can strengthen each other.** AlphaGo's match result showed that learned pattern recognition could help guide planning in a difficult strategic game. Its success was specific to Go, not proof that one system could solve every kind of problem.
 
-**References:** [Original AlphaGo paper, *Nature* (2016)](https://www.nature.com/articles/nature16961); [Google DeepMind's account of AlphaGo and the Lee Sedol match](https://deepmind.google/research/alphago/).
+**References:** [TUM, *AI in Society - Foundations of AI and Data Science*, Chapter 2](https://www.gov.sot.tum.de/fileadmin/w00bzh/rds/_my_direct_uploads/AI_in_Society-Foundations_of_AI_and_Data_Science_01.pdf); [Original AlphaGo paper, *Nature* (2016)](https://www.nature.com/articles/nature16961); [Google DeepMind's account of AlphaGo and the Lee Sedol match](https://deepmind.google/research/alphago/).

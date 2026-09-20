@@ -8,9 +8,9 @@ AI grew through changing answers to a few questions: What can a machine compute?
 
 </div>
 
-## Follow the ideas
+## Chapter timeline
 
-The chapter moves through eight periods. Follow the line, and select any linked event to open its note directly.
+Eight periods trace changing ideas about computation, reasoning, learning, and the practical limits of AI.
 
 <div class="chapter-timeline" data-chapter-timeline aria-label="Timeline of artificial intelligence milestones">
   <nav class="chapter-eras" data-era-nav aria-label="Jump to a chapter period"></nav>
