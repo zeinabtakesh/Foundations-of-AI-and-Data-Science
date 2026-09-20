@@ -42,6 +42,10 @@ body:has(.chapter-intro) .md-nav__link--active {
   text-align: left;
 }
 
+.md-content:has(.chapter-intro) .chapter-overview > p:last-child {
+  text-align: justify;
+}
+
 .chapter-intro {
   border-top: 4px solid var(--chapter-coral);
   border-bottom: 1px solid var(--chapter-line);
