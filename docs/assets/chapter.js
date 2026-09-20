@@ -19,16 +19,16 @@
     ["1959", "Samuel's checkers", "AI becomes a field", "A game program improves its play through experience.", "02-ai-becomes-a-field/04-samuel-checkers.md"],
     ["1966", "ELIZA", "AI becomes a field", "A rule-based conversation program reveals the power of pattern matching.", "02-ai-becomes-a-field/05-eliza.md"],
     ["1969", "Perceptron limitations", "AI becomes a field", "Limits of single-layer perceptrons focus attention on harder problems.", "02-ai-becomes-a-field/06-perceptron-limitations.md"],
-    ["1970s", "First AI winter", "Limits emerge", "High expectations meet limited computing power and difficult problems."],
-    ["1970s–80s", "Expert systems", "Rules and knowledge", "Specialized systems encode expert knowledge as facts and rules."],
-    ["1980", "Chinese room", "Rules and knowledge", "A philosophical challenge asks whether symbol manipulation implies understanding."],
-    ["1982", "Hopfield networks", "Neural networks return", "Recurrent networks demonstrate associative memory."],
-    ["1980s", "Backpropagation", "Neural networks return", "Training methods make multilayer networks more practical."],
-    ["Late 1980s", "Second AI winter", "Limits emerge", "The cost and limits of expert systems temper expectations again."],
-    ["1990s–2000s", "Statistical learning", "Learning from data", "Data-driven methods become central to many AI tasks."],
-    ["2012", "AlexNet", "Deep learning", "Deep networks and GPUs produce a major image-recognition result."],
-    ["2016", "AlphaGo", "Modern AI", "Search and learned networks combine to master Go."],
-    ["2017 onward", "Transformers", "Modern AI", "Attention-based architectures shape later language models."]
+    ["1970s", "First AI winter", "Limits emerge", "Early promises meet harder problems and closer scrutiny of AI funding.", "03-first-ai-winter/01-first-ai-winter.md"],
+    ["1970s–80s", "Expert systems", "Rules and knowledge", "Specialized systems encode expert knowledge as facts and rules.", "04-symbolic-ai-and-expert-systems/01-expert-systems.md"],
+    ["1980", "Chinese room", "Rules and knowledge", "A philosophical challenge asks whether symbol manipulation implies understanding.", "04-symbolic-ai-and-expert-systems/02-chinese-room.md"],
+    ["1982", "Hopfield networks", "Neural networks return", "Recurrent networks demonstrate associative memory.", "05-neural-networks-return/01-hopfield-networks.md"],
+    ["1986", "Backpropagation", "Neural networks return", "Error signals help train weights in hidden layers.", "05-neural-networks-return/02-backpropagation.md"],
+    ["Late 1980s", "Second AI winter", "Limits emerge", "The cost and limits of expert systems temper expectations again.", "06-second-ai-winter/01-second-ai-winter.md"],
+    ["1990s–2000s", "Statistical learning", "Learning from data", "Data-driven methods become central to many AI tasks.", "07-statistical-machine-learning/01-statistical-learning.md"],
+    ["2012", "AlexNet", "Deep learning", "Deep networks and GPUs produce a major image-recognition result.", "08-deep-learning-and-modern-ai/01-alexnet.md"],
+    ["2016", "AlphaGo", "Modern AI", "Search and learned networks combine to master Go.", "08-deep-learning-and-modern-ai/02-alphago.md"],
+    ["2017 onward", "Transformers", "Modern AI", "Attention-based architectures shape later language models.", "08-deep-learning-and-modern-ai/03-transformers.md"]
   ];
 
   function initTimeline(root) {
@@ -185,9 +185,13 @@
     });
     document.querySelectorAll("[data-open-details]:not([data-ready])").forEach(link => {
       link.dataset.ready = "true";
-      link.addEventListener("click", () => {
+      link.addEventListener("click", event => {
         const details = document.getElementById(link.hash.slice(1));
-        if (details) details.open = true;
+        if (details?.tagName !== "DETAILS") return;
+        event.preventDefault();
+        details.open = true;
+        history.replaceState(null, "", link.hash);
+        requestAnimationFrame(() => details.scrollIntoView({ behavior: "smooth", block: "start" }));
       });
     });
     const linkedDetails = document.getElementById(window.location.hash.slice(1));

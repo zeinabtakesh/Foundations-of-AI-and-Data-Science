@@ -28,3 +28,19 @@ nav:
           - Samuel's Checkers Program: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/04-samuel-checkers.md
           - ELIZA: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/05-eliza.md
           - Perceptron Limitations: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/02-ai-becomes-a-field/06-perceptron-limitations.md
+      - First AI Winter:
+          - Overview: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/03-first-ai-winter/01-first-ai-winter.md
+      - Symbolic AI and Expert Systems:
+          - Expert Systems: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/04-symbolic-ai-and-expert-systems/01-expert-systems.md
+          - Chinese Room: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/04-symbolic-ai-and-expert-systems/02-chinese-room.md
+      - Neural Networks Return:
+          - Hopfield Networks: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/05-neural-networks-return/01-hopfield-networks.md
+          - Backpropagation: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/05-neural-networks-return/02-backpropagation.md
+      - Second AI Winter:
+          - Overview: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/06-second-ai-winter/01-second-ai-winter.md
+      - Statistical Machine Learning:
+          - Overview: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/07-statistical-machine-learning/01-statistical-learning.md
+      - Deep Learning and Modern AI:
+          - AlexNet: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/08-deep-learning-and-modern-ai/01-alexnet.md
+          - AlphaGo: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/08-deep-learning-and-modern-ai/02-alphago.md
+          - Transformers: Chapters/Chapter_2_The_Evolution_of_Artificial_Intelligence/08-deep-learning-and-modern-ai/03-transformers.md

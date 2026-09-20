@@ -24,7 +24,7 @@ Organized by [John McCarthy](#john-mccarthy){ data-open-details }, [Marvin Minsk
     <summary>John McCarthy</summary>
     <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/John_McCarthy_Stanford.jpg/500px-John_McCarthy_Stanford.jpg" alt="Portrait of John McCarthy" loading="lazy">
     <div class="organizer-card-body">
-      <p>At Dartmouth, McCarthy proposed the summer project and gave the new field its name: <em>artificial intelligence</em>.</p>
+      <p>John McCarthy was a mathematician and computer scientist who helped establish AI as a field. He proposed the Dartmouth workshop and later created Lisp, a language widely used in early AI research. <a href="https://engineering.stanford.edu/news/stanfords-john-mccarthy-seminal-figure-artificial-intelligence-dead-84">Read his biography</a>.</p>
       <p class="organizer-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg">null0 / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> (2006).</p>
     </div>
   </details>
@@ -32,7 +32,7 @@ Organized by [John McCarthy](#john-mccarthy){ data-open-details }, [Marvin Minsk
     <summary>Marvin Minsky</summary>
     <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Marvin_Minsky.jpg/500px-Marvin_Minsky.jpg" alt="Portrait of Marvin Minsky" loading="lazy">
     <div class="organizer-card-body">
-      <p>A Harvard researcher at the time, Minsky brought work on neural networks and machine intelligence to the proposal.</p>
+      <p>Marvin Minsky was an AI researcher interested in how minds and machines think. After helping organize the Dartmouth workshop, he co-founded MIT's Artificial Intelligence Laboratory. <a href="https://news.mit.edu/2016/marvin-minsky-obituary-0125">Read his biography</a>.</p>
       <p class="organizer-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Marvin_Minsky.jpg">Steamtalks / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> (2006).</p>
     </div>
   </details>
@@ -40,7 +40,7 @@ Organized by [John McCarthy](#john-mccarthy){ data-open-details }, [Marvin Minsk
     <summary>Nathaniel Rochester</summary>
     <img src="https://history.computer.org/pioneers/images/rochester.jpg" alt="Portrait of Nathaniel Rochester" loading="lazy">
     <div class="organizer-card-body">
-      <p>An IBM computer engineer, Rochester brought practical experience building early computers to the project.</p>
+      <p>Nathaniel Rochester was a computer engineer at IBM and chief architect of the IBM 701, an early scientific computer. He brought hands-on computing experience to the Dartmouth proposal. <a href="https://www.computer.org/profiles/nathaniel-rochester">Read his biography</a>.</p>
       <p class="organizer-credit">Photo: <a href="https://history.computer.org/pioneers/rochester.html">IEEE Computer Society</a>.</p>
     </div>
   </details>
@@ -48,7 +48,7 @@ Organized by [John McCarthy](#john-mccarthy){ data-open-details }, [Marvin Minsk
     <summary>Claude Shannon</summary>
     <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/C.E._Shannon._Tekniska_museet_43069_%28cropped%29.jpg/500px-C.E._Shannon._Tekniska_museet_43069_%28cropped%29.jpg" alt="Portrait of Claude Shannon" loading="lazy">
     <div class="organizer-card-body">
-      <p>At Bell Telephone Laboratories, Shannon's information theory helped frame new questions about information and machines.</p>
+      <p>Claude Shannon was a mathematician and engineer whose 1948 work founded information theory. His ideas about representing and transmitting information helped shape the questions AI researchers asked about machines. <a href="https://shannon.engr.tamu.edu/about-us/">Read his biography</a>.</p>
       <p class="organizer-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:C.E._Shannon._Tekniska_museet_43069_(cropped).jpg">Tekniska museet / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> (source image cropped).</p>
     </div>
   </details>
