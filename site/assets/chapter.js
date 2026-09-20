@@ -235,6 +235,8 @@
   }
 
   function init() {
+    const drawer = document.getElementById("__drawer");
+    if (drawer) drawer.checked = false;
     document.querySelectorAll(".chapter-back:not([data-ready])").forEach(link => {
       link.dataset.ready = "true";
       initBackLink(link);
@@ -267,6 +269,10 @@
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
+  window.addEventListener("pageshow", () => {
+    const drawer = document.getElementById("__drawer");
+    if (drawer) drawer.checked = false;
+  });
   document.addEventListener("DOMContentLoaded", () => {
     if (window.document$) window.document$.subscribe(init);
   });
