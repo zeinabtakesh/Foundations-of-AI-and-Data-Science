@@ -5,6 +5,30 @@
   --chapter-line: #cbdcd8;
 }
 
+@media (min-width: 76.25em) {
+  body:has(.chapter-intro) .md-grid {
+    max-width: 74rem;
+  }
+
+  body:has(.chapter-intro) .md-sidebar--secondary {
+    width: 9.5rem;
+  }
+}
+
+@media (min-width: 85em) {
+  body:has(.chapter-intro) .md-grid {
+    max-width: 80rem;
+  }
+
+  body:has(.chapter-intro) .md-sidebar--primary {
+    width: 14rem;
+  }
+}
+
+body:has(.chapter-overview) .md-sidebar--secondary {
+  display: none;
+}
+
 .md-content:has(.chapter-intro) {
   background: radial-gradient(circle at 1px 1px, #d8e8e2 1px, transparent 1.5px) 0 0 / 24px 24px;
 }
