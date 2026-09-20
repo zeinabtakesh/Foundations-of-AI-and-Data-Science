@@ -267,9 +267,9 @@ body:has(.chapter-intro) .md-nav__link--active {
 .machine-controls button:disabled { opacity: .4; cursor: default; }
 .machine-controls button:focus-visible { outline: 3px solid var(--chapter-coral); outline-offset: 2px; }
 
-.machine-lab { background: #173433; color: #fff; padding: 1.2rem; margin: 1.5rem 0; border-radius: 4px; }
+.machine-lab { max-width: 36rem; background: #173433; color: #fff; padding: 1rem; margin: 1.2rem 0; border-radius: 4px; }
 .machine-topline { display: flex; justify-content: space-between; gap: 1rem; font-size: .78rem; font-weight: 700; color: #c4e8db; text-transform: uppercase; }
-.machine-tape { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: .35rem; margin: 1.4rem 0 1rem; }
+.machine-tape { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: .35rem; margin: .9rem 0 .7rem; }
 .machine-cell { display: flex; flex-direction: column; align-items: center; min-width: 0; }
 .machine-symbol { display: grid; place-items: center; width: 100%; aspect-ratio: 1; background: #fff; color: var(--chapter-ink); font-size: clamp(1rem, 2.5vw, 1.5rem); font-weight: 700; border: 2px solid transparent; }
 .machine-cell.is-head .machine-symbol { border-color: #f6a770; background: #fff6e8; }
