@@ -13,6 +13,20 @@
   body:has(.chapter-intro) .md-sidebar--secondary {
     width: 9.5rem;
   }
+
+  body:has(.chapter-intro) .md-header__button[for="__drawer"] {
+    display: inline-block;
+  }
+
+  body:has(.chapter-intro):has(#__drawer:checked) .md-sidebar--primary {
+    display: none;
+  }
+
+  body:has(.chapter-intro) #__drawer:checked ~ .md-overlay {
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
 }
 
 @media (min-width: 85em) {
